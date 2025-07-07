@@ -1,0 +1,29 @@
+{
+  "name": "react-is-love",
+  "version": "1.0.0",
+  "description": "This is a react progression",
+  "mainfile": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Muhammad-Allyan/react-progress.git"
+  },
+  "keywords": [
+    "react",
+    "reactislove",
+    "learnreac",
+    "allyan"
+  ],
+  "author": "Muhammad Allyan Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammad-Allyan/react-progress/issues"
+  },
+  "homepage": "https://github.com/Muhammad-Allyan/react-progress#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
