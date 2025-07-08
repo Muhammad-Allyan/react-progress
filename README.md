@@ -2,7 +2,7 @@
 
 # (A) Setup the nodejs and npm in our project. 🚀
 
-# 1- package.json is the configuration for our npm.
+## 1- package.json is the configuration for our npm.
 
 # 2- Most important package is the bundler we are using in our project.
 
