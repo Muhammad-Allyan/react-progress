@@ -73,7 +73,7 @@ So after the installaion is complete then we got the package-lock.json and node-
 6- npm i = npm install
 
 ### (C) What _`Parcel`_ is doing for us ? 👇
-
+[Parcel Doc](https://parceljs.org/)
 - Dev Build
 - Local Server
 - HMR => Hot Module Replacment
