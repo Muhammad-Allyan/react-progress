@@ -46,6 +46,12 @@ So after the installaion is complete then we got the package-lock.json and node-
 
 17- gitignore file ?
 
+17(a)- node-modules file
+
+17(b)- dist file
+
+17(c)- parcel-cache file
+
 18- Important files to push ?
 
 ### (B) IGNITING OUR APP / BUILDING OUR APP 🚀
@@ -63,8 +69,9 @@ So after the installaion is complete then we got the package-lock.json and node-
 5- npm i = npm install
 
 ### (C) What Parcel is doing for us ? 👇
-- Dev Build 
-- Local Server 
+
+- Dev Build
+- Local Server
 - HMR => Hot Module Replacment
 - File Watching Algorithm => written in C++
 - Caching => Faster Builds
@@ -79,4 +86,3 @@ So after the installaion is complete then we got the package-lock.json and node-
 - Error Handling
 - HTTPs Features
 - Different dev & production bundle
-- 
