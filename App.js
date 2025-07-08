@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 const heading = document.createElement("h1");
 heading.innerHTML = "Hello World from Javascript!";
 const root1 = document.getElementById("root");
-root1.appendChild(heading);
+root1.appendChild(heading); 
 
 //React
 const heading2 = React.createElement(

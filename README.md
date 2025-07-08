@@ -1,7 +1,9 @@
 # **`Learning React`** 🚀
 
-### (A) Setup the _`nodejs`_ and _`npm`_ in our project. 👇
+## (A) Setup the _`nodejs`_ and _`npm`_ in our project. 👇
 
+1- We we need to add node package manager in our project. Make our project capable to use npm.
+The command for adding npm in our project => npm install
 1- package.json is the configuration for our npm.
 
 2- Most important package is the bundler we are using in our project.
@@ -62,7 +64,7 @@ So after the installaion is complete then we got the package-lock.json and node-
 
 2- npx parcel ?
 
-3- npx parcel build index.html ? 
+3- npx parcel build index.html ?
 
 4- "main": App.js => Entry point of our app ?
 
@@ -73,7 +75,9 @@ So after the installaion is complete then we got the package-lock.json and node-
 6- npm i = npm install
 
 ### (C) What _`Parcel`_ is doing for us ? 👇
+
 [Parcel Doc](https://parceljs.org/)
+
 - Dev Build
 - Local Server
 - HMR => Hot Module Replacment
@@ -99,9 +103,9 @@ So after the installaion is complete then we got the package-lock.json and node-
 1- What is browserslist?
 
 - [Check Browsers Versions](https://browserslist.dev/)
-- [Npm JS Browsers List ](https://www.npmjs.com/package/browserslist)
+- [Npm JS Browsers List](https://www.npmjs.com/package/browserslist)
 
-##### The command below is for last 2 version of all browsers.
+##### The command below is for last 2 version of all browsers
 
 ```package.json
 "browserslist": [
