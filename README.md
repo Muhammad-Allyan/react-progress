@@ -1,6 +1,6 @@
 # Learning React 🚀
 
-### (A) Setup the nodejs and npm in our project. 🚀
+### (A) Setup the nodejs and npm in our project. 👇
 
 1- package.json is the configuration for our npm.
 
@@ -54,19 +54,23 @@ So after the installaion is complete then we got the package-lock.json and node-
 
 18- Important files to push ?
 
-### (B) IGNITING OUR APP / BUILDING OUR APP 🚀
+### (B) IGNITING OUR APP / BUILDING OUR APP 👇
 
-#### We will use parcel to ignite/build our app and how? See the command below 👇
+#### We will use parcel to ignite/build our app and how? See the command below 🚀
 
 1- The command => npx parcel index.html
 
 2- npx parcel ?
 
-3- npm install react =>
+3- npx parcel build index.html ? 
 
-4- npm install react-dom =>
+4- "main": App.js => Entry point of our app ?
 
-5- npm i = npm install
+4- npm install react =>
+
+5- npm install react-dom =>
+
+6- npm i = npm install
 
 ### (C) What Parcel is doing for us ? 👇
 
@@ -85,4 +89,20 @@ So after the installaion is complete then we got the package-lock.json and node-
 - Diagnostics
 - Error Handling
 - HTTPs Features
+- Tree Shaking => remove unused code
 - Different dev & production bundle
+
+### (D) Making our app compatible for older versions ? 👇
+
+#### browserslist 📂
+
+1- What is browserslist?
+
+- [Check Browsers Versions](https://browserslist.dev/)
+- [Npm JS Browsers List ](https://www.npmjs.com/package/browserslist)
+
+##### The command below is for last 2 version of all browsers.
+
+"browserslist": [
+"last 2 versions"
+]
