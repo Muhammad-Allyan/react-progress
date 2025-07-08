@@ -1,6 +1,6 @@
-# Learning React 🚀
+# **`Learning React`** 🚀
 
-### (A) Setup the nodejs and npm in our project. 👇
+### (A) Setup the _`nodejs`_ and _`npm`_ in our project. 👇
 
 1- package.json is the configuration for our npm.
 
@@ -54,7 +54,7 @@ So after the installaion is complete then we got the package-lock.json and node-
 
 18- Important files to push ?
 
-### (B) IGNITING OUR APP / BUILDING OUR APP 👇
+### (B) _`IGNITING`_ OUR APP / _`BUILDING`_ OUR APP 👇
 
 #### We will use parcel to ignite/build our app and how? See the command below 🚀
 
@@ -72,7 +72,7 @@ So after the installaion is complete then we got the package-lock.json and node-
 
 6- npm i = npm install
 
-### (C) What Parcel is doing for us ? 👇
+### (C) What _`Parcel`_ is doing for us ? 👇
 
 - Dev Build
 - Local Server
@@ -92,7 +92,7 @@ So after the installaion is complete then we got the package-lock.json and node-
 - Tree Shaking => remove unused code
 - Different dev & production bundle
 
-### (D) Making our app compatible for older versions ? 👇
+### (D) Making our app compatible for _`older`_ versions ? 👇
 
 #### browserslist 📂
 
@@ -103,6 +103,8 @@ So after the installaion is complete then we got the package-lock.json and node-
 
 ##### The command below is for last 2 version of all browsers.
 
+```package.json
 "browserslist": [
 "last 2 versions"
 ]
+```
