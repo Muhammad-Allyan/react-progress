@@ -108,3 +108,5 @@ So after the installaion is complete then we got the package-lock.json and node-
 "last 2 versions"
 ]
 ```
+
+## [_`Components`_](https://github.com/Muhammad-Allyan/react-progress/blob/e9c2022334a02e13bf7c8a79ea1c8f524223c09d/master%20react/Components.md)
