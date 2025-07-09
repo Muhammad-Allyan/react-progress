@@ -14,7 +14,9 @@
 The command for adding npm in our project => `npm install`. Many people use this command `npm init -y` the issue in this command is it will skip alot of files. We don't want to skip any of the file. So do this command instead `npm init`
 
 - After doing the above command it will ask some question before it can configure npm in our project, Just see below.
+
 ### Questions 👇
+
 * `package name:` You can give any name you want.
 * `version:` Keep it as default.
 * `description:` You can write anything.
@@ -25,7 +27,7 @@ The command for adding npm in our project => `npm install`. Many people use this
 * `author:` Muhammad Allyan (You can write any name it's up to you)
 * `license:` (ISC) 
 
-It will ask you now `Is it OK?` hit enter and it will install the `package.json` file. 
+It will ask you now `Is it OK?` hit enter and it will give you a `package.json` file. 
 
 ### `package.json`
 
@@ -40,7 +42,7 @@ It will ask you now `Is it OK?` hit enter and it will install the `package.json`
 
 - The Most important package or dependency is the bundler we are using in our project.
 
-### So what is bundler? ###
+### So what is bundler?
 
 - A bundler is a tool that automates the process of combining multiple files, like JavaScript, CSS, and images, into a smaller number of optimized files (bundles) for efficient delivery to web browsers.
 
@@ -53,23 +55,27 @@ It will ask you now `Is it OK?` hit enter and it will install the `package.json`
 
 - Parcel basically comes as a node package so we are going to install that package.
 
-7- When we will install any package/dependencies in our app we have the same command for all.
+**Command to install the parcel bundler**
 
-8- Command => npm install parcel but we will give the parameter a flag which is => npm install -D parcel.
+- `npm install -D parcel`
 
-9- What is -D above in the command?
+- `-D` in the above command represents the dependency. Mean we are installing parcel as a denpendency for our project.
 
-10- The -D is represents the dependency. There are two types of dependencies.
+### What is Dependency?
+- Dependency refers to a situation where one piece of code (a module, library, or component) relies on another to function correctly.
+  
+#### There are three types of `dependencies`.
+- The `Developer Dependency`
+- The `Normal Dependency`
+- The `Transitive Dependency`
+  
+`1-` The __developer dependency/packages__ => It is generally required for development face. When we are developing our app so the we required the dev dependency/package.
 
-10(a)- The developer dependency/packages => It is generally required for in a development face. When we are developing our app so the we required the dev dependency/package.
+`2-` The __normal dependency/packages__ => The normal dependency/package are used in production also.
 
-10(b)- The normal dependency/packages => The normal dependency/package are used in production also.
+So we are telling npm the package manager that we are installing the package as a dev dependency.After writing this command => `npm install -D parcel`. Then it will install the parcel and fetch the package, The parcel from the npm package manager repository.
 
-So we are telling npm the package manager that we are installing the package as a dev dependency.
-
-So after writing this command => npm install -D parcel. Then it will install the parcel and fetch the package the parcel from the npm package manager repository.
-
-So after the installaion is complete then we got the package-lock.json and node-modules in our project and what is these two files? Also parcel has been added in our package.json file as a dev dependeny.
+So after the installation completed then we got the `package-lock.json` file and `node-modules` file in our project and what are these two files? Also parcel has been added in our `package.json` file as a dev dependeny.
 
 11- "parcel": "^2.15.4" => The caret sign ?
 
