@@ -4,6 +4,7 @@
 
 1- We we need to add node package manager in our project. Make our project capable to use npm.
 The command for adding npm in our project => npm install
+
 1- package.json is the configuration for our npm.
 
 2- Most important package is the bundler we are using in our project.
