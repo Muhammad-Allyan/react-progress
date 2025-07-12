@@ -1,38 +1,81 @@
-# **`Learning React`** 🚀
+# **`Node.js & npm setup`** 🚀
 
-## (A) Setup the _`nodejs`_ and _`npm`_ in our project. 👇
+## (A) Install _`nodejs`_ in your system. 👇
 
-1- We we need to add node package manager in our project. Make our project capable to use npm.
-The command for adding npm in our project => npm install
-1- package.json is the configuration for our npm.
+- Install the LTS (Long Term Support) version of node.js from this link => [Download Node.js](https://nodejs.org/en/download)
+- Now set up the node.js in your system.
+- After the successful installation you can check you version of node in your system. Open the cmd (Command Prompt) and type 👇
+- `node -v` OR `node --version` you will get the version of node.js
+- ```See the version``` </br></br>![node version](image-2.png)
 
-2- Most important package is the bundler we are using in our project.
+## (B) Setup the _`npm`_ in our project. 👇
 
-3- With help of bundler we will minify, compressed, optimised, cahched, package our app. For making our app ready to deploy to the production.
+- We we need to add node package manager in our project. Make our project capable to use npm.
+The command for adding npm in our project => `npm install`. Many people use this command `npm init -y` the issue in this command is it will skip alot of files. We don't want to skip any of the file. So do this command instead `npm init`
 
-4- When we do create react app then behind the scenes this create app uses webpack & Babel as a bundler.
+- After doing the above command it will ask some question before it can configure npm in our project, Just see below.
 
-5- So in our app we are using parcel as a bundler. Webpack, Parcel, Vite these are the bundlers.
+### Questions 👇
 
-6- So parcel basically comes as a node package so we are going to install that packge.
+* `package name:` You can give any name you want.
+* `version:` Keep it as default.
+* `description:` You can write anything.
+* `entry point:` index.html
+* `test command:` jest (it's up to you but i am using jest right now)
+* `git repository:` (https://github.com/Muhammad-Allyan/react-progress.git)
+* `keywords:` You can give any keyword if you wish to.
+* `author:` Muhammad Allyan (You can write any name it's up to you)
+* `license:` (ISC) 
 
-7- When we will install any package/dependencies in our app we have the same command for all.
+It will ask you now `Is it OK?` hit enter and it will give you a `package.json` file. 
 
-8- Command => npm install parcel but we will give the parameter a flag which is => npm install -D parcel.
+### `package.json`
 
-9- What is -D above in the command?
+- package.json is the configuration for our npm. Whatever we gave the above like package name, vesion, description or anything this file contains all the information.
 
-10- The -D is represents the dependency. There are two types of dependencies.
+- As you know our project is dependent on alot of packages. Those `package` that our project is dependent on are the `dependencies` and `npm` manages that, So `npm` take cares that what is the version of our package and it will take care of it inside the `package.json` file.
 
-10(a)- The developer dependency/packages => It is generally required for in a development face. When we are developing our app so the we required the dev dependency/package.
+***So finally we configure npm in our project and now we can get package and dependencies into our project.***
 
-10(b)- The normal dependency/packages => The normal dependency/package are used in production also.
+## (C) Let's install the _`bundler`_ in our project. 👇
 
-So we are telling npm the package manager that we are installing the package as a dev dependency.
 
-So after writing this command => npm install -D parcel. Then it will install the parcel and fetch the package the parcel from the npm package manager repository.
+- The Most important package or dependency is the bundler we are using in our project.
 
-So after the installaion is complete then we got the package-lock.json and node-modules in our project and what is these two files? Also parcel has been added in our package.json file as a dev dependeny.
+### So what is bundler?
+
+- A bundler is a tool that automates the process of combining multiple files, like JavaScript, CSS, and images, into a smaller number of optimized files (bundles) for efficient delivery to web browsers.
+
+**In an easy way let suppose!**
+- When we have the normal HTML, CSS & JAVASCRIPT files and alot of things in our code. So before sending it to the production our whole code need to be `bundled`, `compressed`, `minified`, `cached`, `cleaned`. The job of a bundler is to bundle your app package your app for making our app ready to deploy to the production. So a bundler helps you to do all that things.
+  
+- `Webpack`, `Parcel`, `Vite` and many more these are bundlers.
+
+- So in our app we are using parcel as a bundler.
+
+- Parcel basically comes as a node package so we are going to install that package.
+
+**Command to install the parcel bundler**
+
+- `npm install -D parcel`
+
+- `-D` in the above command represents the dependency. Mean we are installing parcel as a denpendency for our project.
+
+### What is Dependency?
+- Dependency refers to a situation where one piece of code (a module, library, or component) relies on another to function correctly.
+  
+#### There are three types of `dependencies`.
+- The `Developer Dependency`
+- The `Normal Dependency`
+- The `Transitive Dependency`
+  
+`1-` The __developer dependency/packages__ => It is generally required for development face. When we are developing our app so the we required the dev dependency/package.
+
+`2-` The __normal dependency/packages__ => The normal dependency/package are used in production also.
+
+So we are telling npm the package manager that we are installing the package as a dev dependency.After writing this command => `npm install -D parcel`. Then it will install the parcel and fetch the package, The parcel from the npm package manager repository.
+
+So after the installation completed then we got the `package-lock.json` file and `node-modules` file in our project and what are these two files? Also parcel has been added in our `package.json` file as a dev dependeny.
 
 11- "parcel": "^2.15.4" => The caret sign ?
 
