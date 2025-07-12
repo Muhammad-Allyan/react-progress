@@ -1,39 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = document.createElement("h1");
-heading.innerHTML = "Hello World from Javascript!";
-const root1 = document.getElementById("root");
-root1.appendChild(heading); 
+// Hello World From Core JS
+const jsHeading = document.createElement("h1");
+jsHeading.innerHTML = "Hello World from Javascript!";
+const root1 = document.getElementById("rootforjs");
+root1.appendChild(jsHeading);
 
-//React
-const heading2 = React.createElement(
-  "h1",
-  { id: "heading2" },
-  "Hello World from React!"
-);
-const root2 = ReactDOM.createRoot(document.getElementById("root2"));
-root2.render(heading2);
-console.log(heading2);
+//Hello World From Core React
+const rHeading = React.createElement("h1", {}, "Hello World From React!");
+const root2 = ReactDOM.createRoot(document.getElementById("rootforreact"));
+root2.render(rHeading);
 
-//
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement(
-      "h1",
-      { id: "childHeading1" },
-      "I am the child heading 1!"
-    ),
-    React.createElement(
-      "h1",
-      { id: "childHeading2" },
-      "I am the child heading 2!"
-    ),
-  ])
-);
+// JSX => Babel transpiles it to React.createElement give us a react element => And this
+// ReactElement at the end is JS Object => And when this react element or a js object is rendered
+// root.render(heading) it will create the HTMLElement on the DOM.
+// Hello World From JSX
 
-const root3 = ReactDOM.createRoot(document.getElementById("root3"));
-root3.render(parent);
-console.log(parent);
+const jsxHeading = <h1>Hello World Frm JSX!</h1>;
+const root3 = ReactDOM.createRoot(document.getElementById("rootforjsx"));
+root3.render(jsxHeading);
