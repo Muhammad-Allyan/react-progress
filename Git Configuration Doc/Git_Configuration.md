@@ -13,7 +13,7 @@ command create main as the main bracnch.
 
 3- ```README.md``` file => create it.
 
-4- ```git add .``` => let's push the code to the github. This commad add all the file to github.
+4- ```git add .``` => let's push the code to the github. This command add all the file to github.
 
 5- ```git commit -m "msg here"``` => In version control systems, a commit is an operation which sends the latest changes of the source code to the repository.
 
