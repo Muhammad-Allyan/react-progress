@@ -17,6 +17,6 @@ root2.render(rHeading);
 // root.render(heading) it will create the HTMLElement on the DOM.
 // Hello World From JSX
 
-const jsxHeading = <h1>Hello World Frm JSX!</h1>;
+const jsxHeading = (<h1 className="jsx">Hello World Frm JSX!</h1>);
 const root3 = ReactDOM.createRoot(document.getElementById("rootforjsx"));
 root3.render(jsxHeading);
