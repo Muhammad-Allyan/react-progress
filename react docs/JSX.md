@@ -6,7 +6,7 @@ JSX is HTML-like or XML-like syntax. JSX stands for JavaScript XML. It's a synta
 - It is not HTML inside JavaScript.
 - JavaScript engine cannot understand JSX as it only understands ECMAScript
 
-`See the code below.` </br></br> ![Code Example](image-1.png)
+`See the code below.` </br></br> ![Code Example](./images/image-1.png)
 
 - When we log heading and jsxHeading, it gives the same object. From this point, we will not be using React.createElement()
 
@@ -42,13 +42,13 @@ JSX is HTML-like or XML-like syntax. JSX stands for JavaScript XML. It's a synta
 
 Single line code:
 
-![Single line code](image-4.png)
+![Single line code](./images/image-4.png)
 
 Multi-line code:
 
 - If writing JSX in multiple lines then using ‘()’ parenthesis is mandatory. To tell Babel from where JSX is starting and ending.
 
-![Multi-line code](image-5.png)
+![Multi-line code](./images/image-5.png)
 
 ## Q ) How to use JavaScript code inside JSX?
 
@@ -56,14 +56,14 @@ Inside a React Component when ‘{}’ parenthesis is present we can write any J
 
 `See the code below:`
 
-![JS inside JSX](image-3.png)
+![JS inside JSX](./images/image-3.png)
 
 ## Q ) How to call React Element in JSX?
 
 We can use ‘{}’ parenthesis.
 
-![React Element in JSX](image.png)
-![React Element in JSX](image-2.png)
+![React Element in JSX](./images/image.png)
+![React Element in JSX](./images/image-2.png)
 
 ## Advantages of using JSX.
 
