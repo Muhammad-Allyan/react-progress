@@ -1,46 +1,81 @@
-What is JSX ?
-JSX is a JavaScript syntax which is easier to create react elements.
+## Q ) What is JSX?
 
-How do we use to build our normal web apps before react and any frameworks that came out in the market?
+JSX is HTML-like or XML-like syntax. JSX stands for JavaScript XML. It's a syntax extension for JavaScript.
 
-So at that time we just have our basic Html/Markup, JavaScript/Logic. So we use to write our markup the skeleton and then we use to write our logics what will happen on click. So these frameworks these libraries the react tries to merge things up like HTML and JavaScript.
-So we can do things in one file. 
+- It is not a part of React. React apps can be built even without JSX but the code will become very hard to read.
+- It is not HTML inside JavaScript.
+- JavaScript engine cannot understand JSX as it only understands ECMAScript
 
-So JSX is a convention where we merge Html and JavaScript together.
+`See the code below.` </br></br> ![Code Example](image-1.png)
 
-MYTH => Most of the developers think that JSX is html inside JavaScript but actually this is not. The syntax below is JSX syntax not html inside JavaScript. So what was that than? JSX is a HTML or XML like syntax. So it is not HTML or XML inside JavaScript. JSX is JSX it is  a different syntax.
-const jsxHeading = <h1>This is JSX syntax</h1>;
+- When we log heading and jsxHeading, it gives the same object. From this point, we will not be using React.createElement()
 
-Fundamental difference in JSX
-command 1 =>
-const heading = React.creatElement("h1", {}, "This is my heading");
+## Q ) Is JSX a valid JavaScript?
 
-command 2 =>
-const jsxHeading = <h1>This is JSX syntax</h1>;
+**The answer is yes and no.**
 
-Basically command 1 is equivalent to command 2
+- JSX is not a valid Javascript syntax as it’s not pure HTML or pure JavaScript for a browser to understand. JS does not have built-in JSX. The JS engine does not understand JSX because the JS engine understands ECMAScript or ES6+ code
 
-So this piece of code is JSX in the command 1 => <h1>This is JSX syntax</h1> what will happen when this piece of code is executed it will create the react element. command 1 => <h1>This is JSX syntax</h1> This is also a react element this jsxheading is a react element.
+## Q ) If the browser can’t understand JSX how is it still working?
 
-command 1 => This is how we can create a react element by using core react.
-const heading = React.creatElement("h1", {}, "This is my heading");
+**This is because of Parcel because “Parcel is a Beast”.**
 
-command 2 => This is how we can create a react element by using JSX
-const jsxHeading = <h1>This is JSX syntax</h1>;
+- Before the code gets to JS Engine it is sent to Parcel and Transpiled there. Then after transpilation, the browser gets the code that it can understand.
 
+**Transpilation ⇒** Converting the code in such a format that the browsers can understand.
 
+- Parcel is like a manager who gives the responsibility of transpilation to a package called Babel.
+- Babel is a package that is a compiler/transpiler of JavaScript that is already present inside ‘node-modules’. It takes JSX and converts it into the code that browsers understand, as soon as we write it and save the file. It is not created by Facebook.
 
-JS engine understands Ecma Script!
-Js engine understand all versions of ecma script js engine understands javascript so how jsx is working behind the scenes how the code is working. You know who is the beast you remember yes parcel. Parcel is doing this.
+**Learn more about Babel on [babeljs.io](https://babeljs.io/)**
 
-So JSX code transpiled before it goes to the js engine. 
-Parcel it self not doing the transpilation or converting the code for browser to understand. It uses a package called babel. And babel is transpiling the code for react and browser to understand. Babel also done a lot of things.
+**_JSX (transpiled by Babel) ⇒ React.createElement ⇒ ReactElement ⇒ JS Object ⇒ HTML Element(render)_**
 
-If we have to create attribute in jsx it must be in camelCase.
+## Q ) What is the difference between HTML and JSX?
 
-When older browsers do not understand your es6 code then babel transform you code so the older browsers can understand.
+**JSX is not HTML. It’s HTML-like syntax.**
 
-Babel is a champ in converting one code to another.
+- HTML uses ‘class’ property whereas JSX uses ‘className’ property
+- HTML can use hypens in property names whereas JSX uses camelCase syntax.
 
-JSX single line and multiple line wrapping inside the () round brackets
-For multiple line of code we wrap our code inside the () round brackets why because babel needs to understand that from where jsx is starting and ending.
+## Single Line and Multi Line JSX Code
+
+Single line code:
+
+![Single line code](image-4.png)
+
+Multi-line code:
+
+- If writing JSX in multiple lines then using ‘()’ parenthesis is mandatory. To tell Babel from where JSX is starting and ending.
+
+![Multi-line code](image-5.png)
+
+## Q ) How to use JavaScript code inside JSX?
+
+Inside a React Component when ‘{}’ parenthesis is present we can write any JavaScript expression inside it.
+
+`See the code below:`
+
+![JS inside JSX](image-3.png)
+
+## Q ) How to call React Element in JSX?
+
+We can use ‘{}’ parenthesis.
+
+![React Element in JSX](image.png)
+![React Element in JSX](image-2.png)
+
+## Advantages of using JSX.
+
+1. Sanitizes the data
+
+   - If someone gets access to your JS code and sends some malicious data which will then get displayed on the screen, that attack is called cross-site scripting.
+   - It can read cookies, local storage, session storage, get cookies, get info about your device, and read data. JSx takes care of your data.
+   - If some API passes some malicious data JSX will escape it. It prevents cross-site scripting and sanitizes the data before rendering.
+
+2. Makes code readable
+   - JSX makes it easier to write code as we are no longer creating elements using React.createElement()
+
+3) Makes code simple and elegant
+4) Show more useful errors and warnings
+5) JSX prevents code injections (attacks)
