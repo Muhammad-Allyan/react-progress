@@ -6,3 +6,4 @@ export default function B({ sendDataToA }) {
 
   return <input placeholder="Type in B" onChange={handleChange} />;
 }
+        

@@ -1,8 +1,8 @@
 // Component C
 export default function C({ dataFromB, sendDataToA }) {
   const handleClick = () => {
-    sendDataToA("C's message");
-  };
+      sendDataToA(dataFromB);
+    };
 
   return (
     <div>

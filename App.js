@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import A from "./react docs/Components/A";
 
 // Hello World From Core JS
 const jsHeading = document.createElement("h1");
@@ -20,3 +21,7 @@ root2.render(rHeading);
 const jsxHeading = (<h1 className="jsx">Hello World Frm JSX!</h1>);
 const root3 = ReactDOM.createRoot(document.getElementById("rootforjsx"));
 root3.render(jsxHeading);
+
+
+const root4 = ReactDOM.createRoot(document.getElementById("parentA"));
+root4.render(<A />)
